@@ -1,0 +1,306 @@
+/* center the calculator vertically and horizontally */
+.CalculatorPage {
+  min-height: 100vh;
+  /* full viewport height */
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(450px, 520px));
+  justify-content: center;
+  /* horizontal center */
+  align-content: start;
+  gap: 32px 50px;
+  grid-auto-rows: auto;
+  align-items: start;
+  margin-top: 50px;
+}
+
+.CalculatorColumn {
+  width: 100%;
+}
+
+.checkbox-group {
+  justify-content: center;
+  align-items: center;
+}
+
+.column-title {
+  margin: 0 0 12px 0;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
+}
+
+.General-data h2 {
+  margin: 0 0 12px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2937;
+}
+
+
+
+
+/* card container */
+.Emission-Calculator,
+.Cost-Calculator {
+  background: #CCE7D7;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  /* fixed height for compact vertical layout */
+  max-width: 520px;
+  margin-top: 16px;
+  box-sizing: border-box;
+}
+
+.Emission-Wrapper {
+  background: #CCE7D7;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+  /* or whatever width you prefer */
+  box-sizing: border-box;
+  margin-top: 16px;
+}
+
+.Social-Wrapper {
+  background: #CCE7D7;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin-top: 16px;
+}
+
+.Social-Wrapper .column-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* heading */
+.Emission-Calculator h2,
+.Cost-Calculator h2 {
+  margin: 0 0 12px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* table makes rows vertical (one input per row) */
+.emission-table {
+  width: 360px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.emission-table thead,
+.emission-table th {
+  display: none;
+}
+
+/* each cell holds a label+input stacked */
+.emission-table td {
+  padding: 16px 0;
+  vertical-align: top;
+}
+
+.mat-row input:focus {
+  outline: 2px solid rgb(0, 130, 252);
+}
+
+.MuiAutocomplete-option:hover {
+  background-color: rgba(204, 204, 204, 0.521) !important;
+}
+
+/* label stacks title and input */
+.emission-table label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* inputs full width */
+.emission-table input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d9dee6;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* Main column titles inside the wrappers */
+.Emission-Wrapper .column-title,
+.Social-Wrapper .column-title,
+.Cost-Calculator .column-title {
+  color: #008D39;
+}
+
+.result-box h2 {
+  color: #008D39;
+}
+
+
+.add-btn,
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid #d9dee6;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.add-btn:hover,
+.icon-btn:hover {
+  background: #f0f3f7;
+}
+
+.row-controls {
+  width: 1%;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.result-box {
+  /* ensure no fixed/absolute positioning */
+  position: fixed;
+  /* make it float relative to the viewport */
+  right: 20px;
+  /* distance from right edge */
+  bottom: 20px;
+  /* distance from bottom */
+  z-index: 1000;
+  /* stay above page content */
+
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background: #fff;
+  padding: 24px;
+  width: 360px;
+  max-width: 90vw;
+  /* don’t overflow on small screens */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.result-box button {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #000000;
+}
+
+.column-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.info-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.profile-button {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  margin: 5px;
+}
+
+.materials-button {
+  position: absolute;
+  top: 0;
+  right: 160px;
+  margin: 5px;
+}
+
+
+.Right-group {
+  display: contents;
+  /* children behave as normal grid items on wide screens */
+}
+
+.dropdown-menu {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d9dee6;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+@media (max-width: 1500px) and (min-width: 901px) {
+  .CalculatorPage {
+    grid-template-columns: repeat(2, minmax(450px, 520px));
+  }
+
+  .Right-group {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .Right-group .CalculatorColumn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .result-box {
+    position: static;
+    /* go back into normal flow on tiny screens */
+    width: 100%;
+    max-width: 520px;
+    margin-top: 12px;
+  }
+}
+
+
+/* Small: single column */
+@media (max-width: 900px) {
+  .CalculatorPage {
+    grid-template-columns: minmax(320px, 1fr);
+    gap: 28px;
+  }
+
+  .Right-group {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+}
+
+/* small responsive tweak */
+@media (max-width: 420px) {
+
+  .Emission-Calculator,
+  .Cost-Calculator {
+    width: 100%;
+    padding: 18px;
+  }
+}

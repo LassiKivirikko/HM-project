@@ -1,0 +1,71 @@
+    .panel {
+        margin-top: 24px;
+        padding: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #fdfdfd;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    .header {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .closeBtn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: #eee;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    .section {
+        margin-top: 16px;
+        padding-top: 4px;
+        border-top: 1px solid #e2e2e2;
+    }
+
+    .sectionTitle {
+        margin: 4px 0 8px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        color: #555;
+    }
+
+    .row {
+        display: flex;
+        padding: 4px 0;
+        font-size: 13px;
+        border-bottom: 1px dotted #e7e7e7;
+    }
+
+    .label {
+        flex: 0 0 240px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .value {
+        flex: 1;
+        color: #222;
+    }
+
+    .missing {
+        flex: 1;
+        color: #c0392b;
+        font-weight: 600;
+    }
+
+    .materialCard {
+        margin-bottom: 8px;
+        padding: 8px;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 6px;
+    }

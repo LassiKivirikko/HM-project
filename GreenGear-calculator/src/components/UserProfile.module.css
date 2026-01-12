@@ -1,0 +1,116 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.3rem;
+
+}
+
+.profileContainer {
+  border: 2px solid rgb(48, 46, 46);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  background: #d3e4d3e1;
+  color: black;
+}
+
+.changePassword {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.section p {
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+
+.changePassword:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 0, 0);
+
+}
+
+.keyIcon {
+  color: black;
+}
+
+.section button {
+  margin-top: 75px;
+  padding: 10px;
+}
+
+.passwordChangeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.formGroup label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1rem;
+  gap: 5px;
+  color: black;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+/* Message.module.css */
+.message {
+  margin: 0;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease, height 0.4s ease;
+}
+
+.message.show {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0);
+}
+
+.message.hide {
+  opacity: 0;
+  height: 0;
+  transform: translateY(-10px);
+}
+
+.success {
+  color: green !important;
+}
+
+.error {
+  color: red !important;
+}
+
+.logoutButton button {
+  background-color: rgb(168, 45, 45);
+}

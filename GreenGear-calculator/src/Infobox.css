@@ -1,0 +1,81 @@
+/* backdrop covers viewport and applies blur */
+.infobox-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.300);          /* dark overlay */
+  backdrop-filter: blur(5px);            /* blur background */
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1200;                     /* above other content */
+  padding: 20px;                         /* keeps dialog away from edges on small screens */
+  overflow-y: auto;
+}
+
+/* dialog centered box */
+.infobox-dialog {
+  position: relative;
+  background: #ffffff;
+  color: #111827;
+  border-radius: 12px;
+  max-width: 820px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.2);
+  padding: 28px;
+  box-sizing: border-box;
+  max-height: 90vh;
+  overflow-y: auto; 
+
+}
+
+/* close button in top-right of dialog */
+.infobox-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* content layout */
+.infobox-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.infobox-content h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.infobox-content ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.infobox-content a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.infobox-content em {
+  color: #555;
+  font-style: italic;
+}
+
+/* responsive tweaks */
+@media (max-width: 520px) {
+  .infobox-dialog {
+    padding: 18px;
+  }
+  .infobox-close { top: 8px; right: 8px; }
+}

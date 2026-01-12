@@ -1,0 +1,19 @@
+.materialsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.materialsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.materialsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
