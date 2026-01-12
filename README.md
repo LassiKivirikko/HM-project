@@ -1,2 +1,2 @@
 # HM-project
-Code for the 
+Code for the HM project
